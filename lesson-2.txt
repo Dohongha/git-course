@@ -1,0 +1,11 @@
+git init : khởi tạo thư mục để Git quản lý, lúc này các files được đưa vào vùng Working Directory
+git add <file_name> : thêm một file vào vùng Staging
+git add . : thêm toàn bộ các files vào vùng Staging
+git commit -m "message" : thêm commit cho mỗi lần update (giống như tạo ra các version history cụ thể), lúc này files ở trong vùng Repository
+
+a. Tạo 3 file: file1, file2, file3 -> chưa được đưa vào vùng quản lý bởi Git
+b. Chạy lệnh: git init -> khởi tạo thư mục được quản lý bởi Git, 3 files trên được đưa vào vùng Working Directory
+c. Chạy lệnh: git commit -m"init project" -> không có gì xảy ra/ báo lỗi vì chưa đưa các files vào vùng Staging nên không thể tạo commit
+d. Chạy lệnh: git add file1 -> thêm file1 vào vùng Staging
+e. Chạy lệnh: git commit -m"add file1" -> commit "add file1" được tạo và nằm trong vùng Repository
+f: Chạy lệnh: git add file -> không có gì xảy ra/ báo lỗi vì file không tồn tại

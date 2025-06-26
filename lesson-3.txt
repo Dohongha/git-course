@@ -53,18 +53,18 @@ b. Tạo file: file1.txt, file2.txt, oops/file3.txt
 - Repository:
 c. Thêm file .gitignore, thêm vào 2 dòng:
    i. file1.txt
-   ii. oops/file3.txt
+   ii. oops/
 - Local: file1.txt, oops/file3.txt
-- Working Directory: file2.txt
+- Working Directory: file2.txt, gitignore (file gitignore cũng được thêm vào working Directory vì file gitignore cũng nằm trong folder lesson-3-git, file 1 và file 3 ko được thêm vào vì nằm trong gitignore)
 - Staging: 
 - Repository:
 d. git add . (thêm toàn bộ các file mới/ thay đổi từ Working Directory vào vùng Staging)
 - Local: file1.txt, oops/file3.txt
 - Working Directory: 
-- Staging: file2.txt
+- Staging: file2.txt, gitignore
 - Repository:
 e. git commit -m"init project" (file2.txt được thêm vào vùng Repository cùng với commit "init project" được tạo)
 - Local: file1.txt, oops/file3.txt
-- Working Directory: file1.txt, oops/file3.txt
+- Working Directory: 
 - Staging: 
-- Repository: file2.txt
+- Repository: file2.txt, gitignore
